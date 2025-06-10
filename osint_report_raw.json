@@ -1,0 +1,632 @@
+{
+  "query": "Investigate Ali Khaledi Nasab\u2019s professional background and possible risk indicators",
+  "structured_query": {
+    "entities": [
+      {
+        "name": "Ali Khaledi Nasab",
+        "type": "person",
+        "category": "primary_target"
+      }
+    ],
+    "intent": "professional_background_investigation_with_risk_assessment",
+    "goals": [
+      "verify_professional_credentials",
+      "map_employment_history",
+      "identify_business_associations",
+      "detect_potential_risk_indicators",
+      "assess_reputation_and_conduct",
+      "uncover_regulatory_or_legal_issues"
+    ],
+    "data_requirements": [
+      "employment_records",
+      "professional_licenses_certifications",
+      "business_registrations",
+      "corporate_affiliations",
+      "legal_proceedings",
+      "regulatory_filings",
+      "news_articles_mentions",
+      "social_media_profiles",
+      "academic_credentials",
+      "industry_publications",
+      "professional_network_connections",
+      "financial_disclosures",
+      "sanctions_watchlists",
+      "criminal_background_checks"
+    ],
+    "priority_sources": [
+      "professional_databases",
+      "business_registries",
+      "court_records",
+      "regulatory_bodies",
+      "news_archives",
+      "sanctions_lists",
+      "linkedin_professional_networks",
+      "industry_specific_databases"
+    ]
+  },
+  "tasks": [
+    {
+      "task_type": "professional_database_search",
+      "target": "Ali Khaledi Nasab",
+      "source": "linkedin_professional_networks",
+      "priority": "high",
+      "reason": "Primary source for employment history and professional credentials verification"
+    },
+    {
+      "task_type": "business_registry_check",
+      "target": "Ali Khaledi Nasab",
+      "source": "business_registries",
+      "priority": "high",
+      "reason": "Identify corporate affiliations and business registrations"
+    },
+    {
+      "task_type": "sanctions_screening",
+      "target": "Ali Khaledi Nasab",
+      "source": "sanctions_lists",
+      "priority": "high",
+      "reason": "Critical risk assessment for regulatory compliance and sanctions exposure"
+    },
+    {
+      "task_type": "court_records_search",
+      "target": "Ali Khaledi Nasab",
+      "source": "court_records",
+      "priority": "high",
+      "reason": "Uncover legal proceedings and potential litigation history"
+    },
+    {
+      "task_type": "news_search",
+      "target": "Ali Khaledi Nasab",
+      "source": "news_archives",
+      "priority": "medium",
+      "reason": "Assess public reputation and identify any negative publicity or achievements"
+    },
+    {
+      "task_type": "regulatory_filing_check",
+      "target": "Ali Khaledi Nasab",
+      "source": "regulatory_bodies",
+      "priority": "medium",
+      "reason": "Check for professional licenses, certifications, and regulatory actions"
+    },
+    {
+      "task_type": "industry_database_search",
+      "target": "Ali Khaledi Nasab",
+      "source": "industry_specific_databases",
+      "priority": "medium",
+      "reason": "Verify industry-specific credentials and professional standing"
+    },
+    {
+      "task_type": "social_media_lookup",
+      "target": "Ali Khaledi Nasab",
+      "source": "social_media_profiles",
+      "priority": "medium",
+      "reason": "Gather additional background information and verify identity consistency"
+    },
+    {
+      "task_type": "professional_network_mapping",
+      "target": "Ali Khaledi Nasab",
+      "source": "professional_databases",
+      "priority": "medium",
+      "reason": "Map professional connections and identify potential business associates"
+    },
+    {
+      "task_type": "academic_verification",
+      "target": "Ali Khaledi Nasab",
+      "source": "academic_institutions",
+      "priority": "low",
+      "reason": "Verify educational credentials and academic background"
+    },
+    {
+      "task_type": "financial_disclosure_search",
+      "target": "Ali Khaledi Nasab",
+      "source": "financial_databases",
+      "priority": "low",
+      "reason": "Identify any public financial disclosures or bankruptcy records"
+    },
+    {
+      "task_type": "publication_search",
+      "target": "Ali Khaledi Nasab",
+      "source": "industry_publications",
+      "priority": "low",
+      "reason": "Check for professional publications or industry recognition"
+    }
+  ],
+  "retrievals": [
+    {
+      "task": {
+        "task_type": "professional_database_search",
+        "target": "Ali Khaledi Nasab",
+        "source": "linkedin_professional_networks",
+        "priority": "high",
+        "reason": "Primary source for employment history and professional credentials verification"
+      },
+      "results": [
+        {
+          "title": "\u202aAli Khaledi-Nasab\u202c - \u202aGoogle Scholar\u202c",
+          "href": "https://scholar.google.com/citations?user=Ash32BAAAAAJ&hl=en",
+          "body": "Ali Khaledi-Nasab. Amazon. Verified email at amazon.com - Homepage. ... A Khaledi-Nasab, M Sabaeian, M Rezaie, M Mohammad-Rezaee. Journal of the European Optical Society-Rapid Publications 9, 14011, 2014. 11: 2014: ... About Scholar ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali Khaledi, Ph.D. - Applied Scientist - Amazon | LinkedIn",
+          "href": "https://www.linkedin.com/in/alikhaledi",
+          "body": "View Ali Khaledi, Ph.D.'s profile on LinkedIn, a professional community of 1 billion members. AI @ Amazon | AI, Gen AI, Deep Learning| Ex-Stanford, Ex-AWS \u00b7 I use Generative AI to solve hard ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali Khaledi, Ph. D.",
+          "href": "https://www.alikhaledi.com/",
+          "body": "March 2023: My Sci rep paper became among the top 100 papers in neuroscience \"Dynamics of phase oscillator networks with synaptic weight and structural plasticity\" . March 2023: Published a piece in Science Magazine w ith the printed title \" Priced out of Science \", and online title \"I almost sold a kidney to pursue my PhD \" In this piece reflecting on my own difficulties paying for graduate ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali KHALEDI-NASAB | Scientist | Biophysics, Neuroscience, Applied ...",
+          "href": "https://www.researchgate.net/profile/Ali-Khaledi-Nasab",
+          "body": "Ali Khaledi-Nasab; Interactions among individuals in social networks lead to echo chambers where the distribution of opinions follows a bimodal distribution with two peaks at the opposite extremes",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "PDF",
+          "href": "https://www.iaadc.net/wp-content/uploads/2015/12/Ali-Khaledi-CV.pdf",
+          "body": "AliKhaledi-Nasab curriculum vitae Dept. of Physics and Astronomy Ohio University, Athens OH 45701, USA H +1 (740) 331 1349 B ak705714@ohio.edu D.O.B: Aug, 07,1989",
+          "source": "duckduckgo"
+        }
+      ],
+      "confidence": "medium",
+      "source": "duckduckgo",
+      "timestamp": 1749446147.342879
+    },
+    {
+      "task": {
+        "task_type": "business_registry_check",
+        "target": "Ali Khaledi Nasab",
+        "source": "business_registries",
+        "priority": "high",
+        "reason": "Identify corporate affiliations and business registrations"
+      },
+      "results": [
+        {
+          "title": "Business Entities - California Secretary of State",
+          "href": "https://www.sos.ca.gov/business-programs/business-entities",
+          "body": "News & Notices, Customer Alerts and Processing Times. News & Notices: Get the latest information about changes affecting business conducted with the Business Programs Division.; Customer Alerts: Get the latest information about confirmed scams against Californians and businesses in the State of California, and what you can do if you have been a victim of a scam.",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "California Secretary of State | Business Entity Search",
+          "href": "https://secretaryofstate.com/california",
+          "body": "Two types of queries may be conducted with the business entity search tool. To run a basic search, furnish the filing number or the full or partial name of the business entity in the search box then select the magnifying glass icon to initiate the search. This will open a new page that will be reviewed in Step 4 of these instructions.",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Business Search - California",
+          "href": "https://bizfileonline.sos.ca.gov/search/business",
+          "body": "The California Business Search provides access to available information for corporations, limited liability companies and limited partnerships of record with the California Secretary of State, with free PDF copies of over 17 million imaged business entity documents, including the most recent imaged Statements of Information filed for Corporations and Limited Liability Companies.",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Global Company Check | NameScan",
+          "href": "https://namescan.io/CompanySingleScan",
+          "body": "PAY AS YOU GO - KNOW YOUR BUSINESS CHECK Do you need information on a company? Simply enter a company name and start searching. NameScan's company check provides you with a detailed understanding of a company by searching against over 180 company registries and 170+ million legal entities across 120 countries. KYB verification is also ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Search Online :: California Secretary of State",
+          "href": "https://www.sos.ca.gov/business-programs/bizfile/search-online",
+          "body": "California Secretary of State Shirley N. Weber, Ph.D. View Search View Navigation",
+          "source": "duckduckgo"
+        }
+      ],
+      "confidence": "medium",
+      "source": "duckduckgo",
+      "timestamp": 1749446150.346657
+    },
+    {
+      "task": {
+        "task_type": "sanctions_screening",
+        "target": "Ali Khaledi Nasab",
+        "source": "sanctions_lists",
+        "priority": "high",
+        "reason": "Critical risk assessment for regulatory compliance and sanctions exposure"
+      },
+      "results": [
+        {
+          "title": "Sanctions List Search",
+          "href": "https://sanctionssearch.ofac.treas.gov/",
+          "body": "Sanctions List Search has a slider-bar that may be used to set a threshold (i.e., a confidence rating) for the closeness of any potential match returned as a result of a user's search. Sanctions List Search will detect certain misspellings or other incorrectly entered text, and will return near, or proximate, matches, based on the confidence ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Consolidated Screening List - International Trade Administration",
+          "href": "https://www.trade.gov/consolidated-screening-list",
+          "body": "The CAPTA List is intended to include foreign financial institutions subject to correspondent or payable-through account sanctions pursuant to sanctions authorities including the Ukraine Freedom Support Act of 2014, as amended by the Countering America's Adversaries Through Sanctions Act; the North Korea Sanctions Regulations, 31 C.F.R. part ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "OpenSanctions: Find sanctions targets and persons of interest",
+          "href": "https://www.opensanctions.org/",
+          "body": "We've developed a dedicated export of sanctioned vessels that can be used for screening a fleet of ships against sanction risks. 2025-02-18 OpenSanctions teams up with Neterium! We are partnering with Neterium to help financial institutions screen large transaction volumes with quality sanctions data.",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "A kidney for a PhD: graduate students consider extreme measures to ...",
+          "href": "https://thepienews.com/a-kidney-for-a-phd/",
+          "body": "But just after the sale went through, sanctions from the US doubled the price of the dollar in Iran, leaving them with $7,500. \"With $15,000 we could afford for both of us, but not with the $7,500,\" Mostafa told The PIE. ... Ali Khaledi-Nasab spoke of the sense of hopelessness he experienced when he was unable to afford to start a PhD program.",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Sanctions screening: An overview - legal.thomsonreuters.com",
+          "href": "https://legal.thomsonreuters.com/blog/overview-sanctions-screening/",
+          "body": "What is sanctions screening? Sanctions screening is the process of checking individuals, businesses, and transactions against official lists to identify potential risks associated with sanctioned parties. Screening can shield organizations from the financial and reputational risks associated with doing business with suspect entities or individuals. It also helps ensure regulatory compliance ...",
+          "source": "duckduckgo"
+        }
+      ],
+      "confidence": "medium",
+      "source": "duckduckgo",
+      "timestamp": 1749446154.4978628
+    },
+    {
+      "task": {
+        "task_type": "court_records_search",
+        "target": "Ali Khaledi Nasab",
+        "source": "court_records",
+        "priority": "high",
+        "reason": "Uncover legal proceedings and potential litigation history"
+      },
+      "results": [
+        {
+          "title": "Online Services - LA Court",
+          "href": "https://www.lacourt.org/website/FindaCase.aspx",
+          "body": "Customers can access a search for case number by party or defendant name in the Los Angeles Superior Court via a secure web server. Name searches incur a public access fee to reimburse the Court for the costs of providing public access to its electronic records (California Rule of Court 2.506 and Government Code Section 68150(l)).",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "How to look up a court case | California Courts | Self Help Guide",
+          "href": "https://selfhelp.courts.ca.gov/court-basics/look-up-case",
+          "body": "To find a court website or contact information: Find my court. Access to information about a case may be limited or restricted Some court records are not available online to protect privacy. For example, you can only find limited information about divorce or criminal cases on a court's website. Case records are available at the courthouse.",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "State Court Records | U.S. Courts - UniCourt",
+          "href": "https://unicourt.com/courts/state",
+          "body": "Search online court records from superior courts, justice courts, circuit courts, and other US State Courts for free. Lookup civil, family law, probate, small claims, labour, personal injury and other types of state court cases by name, case number, party, attorney, judge, docket entry & more.",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Public Records | Judicial Branch of California",
+          "href": "https://courts.ca.gov/policy-administration/public-records",
+          "body": "For example, courts have financial records and contracts. The public may request copies of court case records if the records are not confidential by law or sealed by a court order. The public may request copies of a court's judicial administrative records if the records are not exempt under rule 10.500(f) of the California Rules of Court.",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Court Records - United States Courts",
+          "href": "https://www.uscourts.gov/court-records",
+          "body": "Locate a federal court case by using the Public Access to Court Electronic Records (PACER) or by visiting the Clerk's Office of the courthouse where the case was filed. Electronic Filing (CM/ECF) Case Management/Electronic Case Files (CM/ECF) is the federal Judiciary's system that allows case documents, such as pleadings, motions, and ...",
+          "source": "duckduckgo"
+        }
+      ],
+      "confidence": "medium",
+      "source": "duckduckgo",
+      "timestamp": 1749446157.5683079
+    },
+    {
+      "task": {
+        "task_type": "news_search",
+        "target": "Ali Khaledi Nasab",
+        "source": "news_archives",
+        "priority": "medium",
+        "reason": "Assess public reputation and identify any negative publicity or achievements"
+      },
+      "results": [],
+      "error": "https://html.duckduckgo.com/html 202 Ratelimit",
+      "confidence": "low",
+      "timestamp": 1749446161.195621
+    },
+    {
+      "task": {
+        "task_type": "regulatory_filing_check",
+        "target": "Ali Khaledi Nasab",
+        "source": "regulatory_bodies",
+        "priority": "medium",
+        "reason": "Check for professional licenses, certifications, and regulatory actions"
+      },
+      "results": [
+        {
+          "title": "Ali Khaledi, Ph. D.",
+          "href": "https://www.alikhaledi.com/",
+          "body": "March 2023: My Sci rep paper became among the top 100 papers in neuroscience \"Dynamics of phase oscillator networks with synaptic weight and structural plasticity\" . March 2023: Published a piece in Science Magazine w ith the printed title \" Priced out of Science \", and online title \"I almost sold a kidney to pursue my PhD \" In this piece reflecting on my own difficulties paying for graduate ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "\u202aAli Khaledi-Nasab\u202c - \u202aGoogle Scholar\u202c",
+          "href": "https://scholar.google.com/citations?user=Ash32BAAAAAJ&hl=en",
+          "body": "Ali Khaledi-Nasab. Amazon. Verified email at amazon.com - Homepage. Generative AI Neural Networks Deep Learning Machine Learning Artificial Intelligence. Articles Cited by Public access Co-authors. ... A Khaledi-Nasab, JA Kromer, L Schimansky-Geier, AB Neiman. Physical Review E 98 (5), 052303, 2018. 7:",
+          "source": "duckduckgo"
+        },
+        {
+          "title": " Dept. of Physics and Astronomy AliKhaledi-Nasab",
+          "href": "https://www.iaadc.net/wp-content/uploads/2015/12/Ali-Khaledi-CV.pdf",
+          "body": "AliKhaledi-Nasab curriculum vitae Dept. of Physics and Astronomy Ohio University, Athens OH 45701, USA H +1 (740) 331 1349 B ak705714@ohio.edu D.O.B: Aug, 07,1989",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali Khaledi, Ph.D. - Applied Scientist - Amazon | LinkedIn",
+          "href": "https://www.linkedin.com/in/alikhaledi",
+          "body": "View Ali Khaledi, Ph.D.'s profile on LinkedIn, a professional community of 1 billion members. AI @ Amazon | AI, Gen AI, Deep Learning| Ex-Stanford, Ex-AWS \u00b7 I use Generative AI to solve hard ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali KHALEDI-NASAB | Scientist | Biophysics, Neuroscience, Applied ...",
+          "href": "https://www.researchgate.net/profile/Ali-Khaledi-Nasab",
+          "body": "Ali Khaledi-Nasab; Interactions among individuals in social networks lead to echo chambers where the distribution of opinions follows a bimodal distribution with two peaks at the opposite extremes",
+          "source": "duckduckgo"
+        }
+      ],
+      "confidence": "medium",
+      "source": "duckduckgo",
+      "timestamp": 1749446164.19544
+    },
+    {
+      "task": {
+        "task_type": "industry_database_search",
+        "target": "Ali Khaledi Nasab",
+        "source": "industry_specific_databases",
+        "priority": "medium",
+        "reason": "Verify industry-specific credentials and professional standing"
+      },
+      "results": [
+        {
+          "title": "\u202aAli Khaledi-Nasab\u202c - \u202aGoogle Scholar\u202c",
+          "href": "https://scholar.google.com/citations?user=Ash32BAAAAAJ&hl=en",
+          "body": "Ali Khaledi-Nasab. Amazon. Verified email at amazon.com - Homepage. ... A Khaledi-Nasab, M Sabaeian, M Rezaie, M Mohammad-Rezaee. Journal of the European Optical Society-Rapid Publications 9, 14011, 2014. 11: 2014: ... About Scholar ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali Khaledi, Ph.D. - Applied Scientist - Amazon | LinkedIn",
+          "href": "https://www.linkedin.com/in/alikhaledi",
+          "body": "View Ali Khaledi, Ph.D.'s profile on LinkedIn, a professional community of 1 billion members. AI @ Amazon | AI, Gen AI, Deep Learning| Ex-Stanford, Ex-AWS \u00b7 I use Generative AI to solve hard ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali Khaledi, Ph. D.",
+          "href": "https://www.alikhaledi.com/",
+          "body": "March 2023: My Sci rep paper became among the top 100 papers in neuroscience \"Dynamics of phase oscillator networks with synaptic weight and structural plasticity\" . March 2023: Published a piece in Science Magazine w ith the printed title \" Priced out of Science \", and online title \"I almost sold a kidney to pursue my PhD \" In this piece reflecting on my own difficulties paying for graduate ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali KHALEDI-NASAB | Scientist | Biophysics, Neuroscience, Applied ...",
+          "href": "https://www.researchgate.net/profile/Ali-Khaledi-Nasab",
+          "body": "Ali Khaledi-Nasab; Interactions among individuals in social networks lead to echo chambers where the distribution of opinions follows a bimodal distribution with two peaks at the opposite extremes",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "PDF",
+          "href": "https://www.iaadc.net/wp-content/uploads/2015/12/Ali-Khaledi-CV.pdf",
+          "body": "AliKhaledi-Nasab curriculum vitae Dept. of Physics and Astronomy Ohio University, Athens OH 45701, USA H +1 (740) 331 1349 B ak705714@ohio.edu D.O.B: Aug, 07,1989",
+          "source": "duckduckgo"
+        }
+      ],
+      "confidence": "medium",
+      "source": "duckduckgo",
+      "timestamp": 1749446167.225893
+    },
+    {
+      "task": {
+        "task_type": "social_media_lookup",
+        "target": "Ali Khaledi Nasab",
+        "source": "social_media_profiles",
+        "priority": "medium",
+        "reason": "Gather additional background information and verify identity consistency"
+      },
+      "results": [
+        {
+          "title": "Username Search - Social Media Profile Lookup - IDCrawl",
+          "href": "https://www.idcrawl.com/username-search",
+          "body": "How It Works. IDCrawl's username search let's you quickly find a person across dozens of popular social media websites. Just enter a username or handle into the search, and IDCrawl instantly finds these accounts across sites like Instagram, TikTok, Twitter/X, Facebook, YouTube, Snapchat, LinkedIn, Roblox, Flickr, Pinterest, and many more.",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali Khaledi, Ph.D. - Applied Scientist - Amazon | LinkedIn",
+          "href": "https://www.linkedin.com/in/alikhaledi",
+          "body": "View Ali Khaledi, Ph.D.'s profile on LinkedIn, a professional community of 1 billion members. ... As a Sr Principal in Search at Amazon collaborating with product managers, marketers, finance ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali Khaledi, Ph. D.",
+          "href": "https://www.alikhaledi.com/",
+          "body": "March 2023: My Sci rep paper became among the top 100 papers in neuroscience \"Dynamics of phase oscillator networks with synaptic weight and structural plasticity\" . March 2023: Published a piece in Science Magazine w ith the printed title \" Priced out of Science \", and online title \"I almost sold a kidney to pursue my PhD \" In this piece reflecting on my own difficulties paying for graduate ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "\u202aAli Khaledi-Nasab\u202c - \u202aGoogle Scholar\u202c",
+          "href": "https://scholar.google.com/citations?user=Ash32BAAAAAJ&hl=en",
+          "body": "Ali Khaledi-Nasab. Amazon. Verified email at amazon.com - Homepage. ... A Khaledi-Nasab, M Sabaeian, M Rezaie, M Mohammad-Rezaee. Journal of the European Optical Society-Rapid Publications 9, 14011, 2014. 11: 2014: ... About Scholar ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali KHALEDI-NASAB | Scientist | Biophysics, Neuroscience, Applied ...",
+          "href": "https://www.researchgate.net/profile/Ali-Khaledi-Nasab",
+          "body": "Ali Khaledi-Nasab; Interactions among individuals in social networks lead to echo chambers where the distribution of opinions follows a bimodal distribution with two peaks at the opposite extremes ...",
+          "source": "duckduckgo"
+        }
+      ],
+      "confidence": "medium",
+      "source": "duckduckgo",
+      "timestamp": 1749446171.610738
+    },
+    {
+      "task": {
+        "task_type": "professional_network_mapping",
+        "target": "Ali Khaledi Nasab",
+        "source": "professional_databases",
+        "priority": "medium",
+        "reason": "Map professional connections and identify potential business associates"
+      },
+      "results": [
+        {
+          "title": "Ali Khaledi, Ph. D.",
+          "href": "https://www.alikhaledi.com/",
+          "body": "March 2023: My Sci rep paper became among the top 100 papers in neuroscience \"Dynamics of phase oscillator networks with synaptic weight and structural plasticity\" . March 2023: Published a piece in Science Magazine w ith the printed title \" Priced out of Science \", and online title \"I almost sold a kidney to pursue my PhD \" In this piece reflecting on my own difficulties paying for graduate ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "I almost sold a kidney to pursue my Ph.D. | Science | AAAS",
+          "href": "https://www.science.org/content/article/almost-sold-kidney-pursue-phd",
+          "body": "I heard of her difficulties through my professional network, and as an international graduate of a U.S. Ph.D. program myself I wanted to help. ... Ali Khaledi-Nasab; Amazon Web Services; ... Science has built a global award-winning network of reporters and editors that independently cover the most important developments in research and policy.",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "\u202aAli Khaledi-Nasab\u202c - \u202aGoogle Scholar\u202c",
+          "href": "https://scholar.google.com/citations?user=Ash32BAAAAAJ&hl=en",
+          "body": "Ali Khaledi-Nasab. Amazon. Verified email at amazon.com - Homepage. ... Frontiers in Network Physiology 2, 864859, 2022. 16: 2022: Long-Lasting Desynchronization Effects of Coordinated Reset Stimulation Improved by Random Jitters. A Khaledi-Nasab, JA Kromer, PA Tass. Frontiers in Physiology 12, 1446, 2021. 15:",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali Khaledi, Ph.D. - Applied Scientist - Amazon | LinkedIn",
+          "href": "https://www.linkedin.com/in/alikhaledi",
+          "body": "View Ali Khaledi, Ph.D.'s profile on LinkedIn, a professional community of 1 billion members. AI @ Amazon | AI, Gen AI, Deep Learning| Ex-Stanford, Ex-AWS \u00b7 I use Generative AI to solve hard ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Frontiers | Long-Lasting Desynchronization of Plastic Neuronal Networks ...",
+          "href": "https://www.frontiersin.org/journals/network-physiology/articles/10.3389/fnetp.2022.864859/full",
+          "body": "Ali Khaledi-Nasab \u2020 Justus A. Kromer ... A network of strongly interconnected brain areas is involved, including the basal ganglia, the thalamus, and the sensorimotor cortex (McGregor and Nelson, 2019). Individual symptoms are associated with abnormally strong neuronal synchrony in these brain areas (Nini et al., 1995; Hammond et al., 2007).",
+          "source": "duckduckgo"
+        }
+      ],
+      "confidence": "medium",
+      "source": "duckduckgo",
+      "timestamp": 1749446174.888424
+    },
+    {
+      "task": {
+        "task_type": "academic_verification",
+        "target": "Ali Khaledi Nasab",
+        "source": "academic_institutions",
+        "priority": "low",
+        "reason": "Verify educational credentials and academic background"
+      },
+      "results": [
+        {
+          "title": "\u202aAli Khaledi-Nasab\u202c - \u202aGoogle Scholar\u202c",
+          "href": "https://scholar.google.com/citations?user=Ash32BAAAAAJ&hl=en",
+          "body": "Ali Khaledi-Nasab. Amazon. Verified email at amazon.com - Homepage. Generative AI Neural Networks Deep Learning Machine Learning Artificial Intelligence. Articles Cited by Public access Co-authors. ... A Khaledi-Nasab, JA Kromer, L Schimansky-Geier, AB Neiman. Physical Review E 98 (5), 052303, 2018. 7:",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "PDF",
+          "href": "https://www.iaadc.net/wp-content/uploads/2015/12/Ali-Khaledi-CV.pdf",
+          "body": "AliKhaledi-Nasab curriculum vitae Dept. of Physics and Astronomy Ohio University, Athens OH 45701, USA H +1 (740) 331 1349 B ak705714@ohio.edu D.O.B: Aug, 07,1989",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali Khaledi, Ph.D. - Applied Scientist - Amazon | LinkedIn",
+          "href": "https://www.linkedin.com/in/alikhaledi",
+          "body": "View Ali Khaledi, Ph.D.'s profile on LinkedIn, a professional community of 1 billion members. ... When I was an undergraduate student in physics, I did not have good professors. When I asked for ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali KHALEDI-NASAB | Scientist | Biophysics, Neuroscience, Applied ...",
+          "href": "https://www.researchgate.net/profile/Ali-Khaledi-Nasab",
+          "body": "Ali Khaledi-Nasab Interactions among individuals in social networks lead to echo chambers where the distribution of opinions follows a bimodal distribution with two peaks at the opposite extremes.",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali Khaledi, Ph. D.",
+          "href": "https://www.alikhaledi.com/",
+          "body": "March 2023: My Sci rep paper became among the top 100 papers in neuroscience \"Dynamics of phase oscillator networks with synaptic weight and structural plasticity\" . March 2023: Published a piece in Science Magazine w ith the printed title \" Priced out of Science \", and online title \"I almost sold a kidney to pursue my PhD \" In this piece reflecting on my own difficulties paying for graduate ...",
+          "source": "duckduckgo"
+        }
+      ],
+      "confidence": "medium",
+      "source": "duckduckgo",
+      "timestamp": 1749446177.908597
+    },
+    {
+      "task": {
+        "task_type": "financial_disclosure_search",
+        "target": "Ali Khaledi Nasab",
+        "source": "financial_databases",
+        "priority": "low",
+        "reason": "Identify any public financial disclosures or bankruptcy records"
+      },
+      "results": [
+        {
+          "title": "Search Filings - SEC.gov",
+          "href": "https://www.sec.gov/search-filings",
+          "body": "A search engine to find Central Index Key numbers assigned by the SEC to corporate or individual filers. Public Dissemination Service (PDS) ... RESTful data Application Programming Interfaces that include the submissions history by filer and the XBRL data from financial statements. EDGAR RSS Feeds. Really Simple Syndication feeds for EDGAR ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Search Online - California Secretary of State",
+          "href": "https://www.sos.ca.gov/business-programs/bizfile/search-online",
+          "body": "California Secretary of State Shirley N. Weber, Ph.D. View Search View Navigation",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "\u202aAli Khaledi-Nasab\u202c - \u202aGoogle Scholar\u202c",
+          "href": "https://scholar.google.com/citations?user=Ash32BAAAAAJ&hl=en",
+          "body": "Ali Golestani Postdoctoral Fellow at University of Toronto Verified email at utoronto.ca. ... A Khaledi-Nasab, JA Kromer, L Schimansky-Geier, AB Neiman. Physical Review E 98 (5), 052303, 2018. 7: 2018: ... About Scholar ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali Khaledi, Ph.D. - Applied Scientist - Amazon | LinkedIn",
+          "href": "https://www.linkedin.com/in/alikhaledi",
+          "body": "View Ali Khaledi, Ph.D.'s profile on LinkedIn, a professional community of 1 billion members. ... As a Sr Principal in Search at Amazon collaborating with product managers, marketers, finance ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali Khaledi-Nasab - Science | AAAS",
+          "href": "https://www.science.org/content/author/ali-khaledi-nasab",
+          "body": "Ali Khaledi-Nasab I almost sold a kidney to pursue my Ph.D. Application expenses are a major challenge for students from low-income backgrounds, this researcher writes",
+          "source": "duckduckgo"
+        }
+      ],
+      "confidence": "medium",
+      "source": "duckduckgo",
+      "timestamp": 1749446180.9295292
+    },
+    {
+      "task": {
+        "task_type": "publication_search",
+        "target": "Ali Khaledi Nasab",
+        "source": "industry_publications",
+        "priority": "low",
+        "reason": "Check for professional publications or industry recognition"
+      },
+      "results": [
+        {
+          "title": "\u202aAli Khaledi-Nasab\u202c - \u202aGoogle Scholar\u202c",
+          "href": "https://scholar.google.com/citations?user=Ash32BAAAAAJ&hl=en",
+          "body": "Ali Khaledi-Nasab. Amazon. Verified email at amazon.com - Homepage. ... A Khaledi-Nasab, M Sabaeian, M Rezaie, M Mohammad-Rezaee. Journal of the European Optical Society-Rapid Publications 9, 14011, 2014. 11: 2014:",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali KHALEDI-NASAB | Scientist | Biophysics, Neuroscience, Applied ...",
+          "href": "https://www.researchgate.net/profile/Ali-Khaledi-Nasab",
+          "body": "Ali Khaledi-Nasab Interactions among individuals in social networks lead to echo chambers where the distribution of opinions follows a bimodal distribution with two peaks at the opposite extremes.",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Publications - Ali Khaledi Nasab - Scholar",
+          "href": "https://scholar.tecnico.ulisboa.pt/authors/ist421192/records?lang=en",
+          "body": "A list with all publications of this author. Skip to main content. Language. Back; Portugu\u00eas (PT) Log in; A. Ali Khaledi Nasab. ist421192. Scientific production. Publications. Affiliations; Co-authors; Publications. Browse all the publications authored by this user.",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Impact of number of stimulation sites on long-lasting ... - PubMed",
+          "href": "https://pubmed.ncbi.nlm.nih.gov/32872805/",
+          "body": "Justus A Kromer 1 , Ali Khaledi-Nasab 1 , Peter A Tass 1 Affiliation 1 Department of Neurosurgery, Stanford University, Stanford, California 94305, USA. PMID: 32872805 DOI: 10.1063/5.0015196 Abstract Excessive neuronal synchrony is a hallmark of several neurological disorders, e.g., Parkinson's disease. ...",
+          "source": "duckduckgo"
+        },
+        {
+          "title": "Ali Khaledi, Ph.D. - Applied Scientist - Amazon | LinkedIn",
+          "href": "https://www.linkedin.com/in/alikhaledi",
+          "body": "View Ali Khaledi, Ph.D.'s profile on LinkedIn, a professional community of 1 billion members. AI @ Amazon | AI, Gen AI, Deep Learning| Ex-Stanford, Ex-AWS \u00b7 I use Generative AI to solve hard ...",
+          "source": "duckduckgo"
+        }
+      ],
+      "confidence": "medium",
+      "source": "duckduckgo",
+      "timestamp": 1749446185.119732
+    }
+  ]
+}

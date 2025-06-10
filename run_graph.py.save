@@ -1,0 +1,13 @@
+from graph.orchestration import graph
+
+if __name__ == "__main__":
+    inputs = {"query": "Investigate Ali Khaledi Nasab’s professional background and possible risk indicators"}
+    final_state = graph.invoke(inputs)
+
+    print("\n🧾 Final State:")
+    for key, value in final_state.items():
+        if key == "final_report":
+            print(f"\n📄 Report:\n{value[:1000]}...\n")
+        else:
+            print(f"{key}: {type(value)}")
+

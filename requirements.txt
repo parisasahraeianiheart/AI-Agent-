@@ -1,0 +1,15 @@
+langgraph==0.0.18
+langchain==0.1.20
+openai
+anthropic
+google-generativeai
+chromadb
+duckduckgo-search
+beautifulsoup4
+requests
+tweepy
+pydantic
+python-dotenv
+fastapi
+uvicorn
+reactpy
