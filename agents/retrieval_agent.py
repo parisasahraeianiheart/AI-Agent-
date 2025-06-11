@@ -1,11 +1,9 @@
 import sys
 import os
+import time
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-import requests
-import time
 from duckduckgo_search import DDGS
-
 from retrieval_sources.linkedin import lookup_linkedin_profile
 from retrieval_sources.twitter import search_twitter_mentions
 from retrieval_sources.opencorporates import lookup_opencorporates
@@ -25,102 +23,102 @@ def search_duckduckgo(query, max_results=5):
                 break
         return results
 
-# 🔧 Mock functions for missing source types
-def mock_government_database_lookup(target):
+def mock_result(task, message):
     return [{
-        "title": f"{target} not found on major government watchlists",
-        "source": "gov_watchlist"
+        "title": f"{task['target']}: {message}",
+        "source": task['source'],
+        "confidence": 0.6,
+        "timestamp": time.time()
     }]
 
-def mock_public_records_lookup(target):
-    return [{
-        "title": f"Property ownership for {target} in California",
-        "source": "public_records"
-    }]
+def ensure_dict_list(data, fallback_msg="No content"):
+    """Ensure data is a list of dicts. Wrap strings or objects in dicts if needed."""
+    if isinstance(data, list):
+        wrapped = []
+        for item in data:
+            if isinstance(item, dict):
+                wrapped.append(item)
+            else:
+                wrapped.append({"content": str(item), "note": fallback_msg})
+        return wrapped
+    elif isinstance(data, dict):
+        return [data]
+    else:
+        return [{"content": str(data), "note": fallback_msg}]
 
-def mock_financial_record_lookup(target):
-    return [{
-        "title": f"No bankruptcy filings found for {target}",
-        "source": "bankruptcy_records"
-    }]
+def retrieval_agent(state: dict) -> dict:
+    tasks = state.get("osint_tasks", [])
+    if not tasks:
+        print("⚠️ No tasks found in state for retrieval.")
+        state["retrieval_results"] = []
+        return state
 
-def retrieval_agent(task: dict) -> dict:
-    query = f"{task['target']} {task['task_type'].replace('_', ' ')}"
-    source = task.get("source", "").lower()
+    print(f"🔍 Beginning retrieval for {len(tasks)} tasks...")
+    results = []
 
-    # Normalize source aliases
-    alias_map = {
-        "company_registries": "opencorporates",
-        "government_databases": "gov_watchlist",
-        "sanctions_screening_databases": "gov_watchlist",
-        "financial_distress_check": "bankruptcy_records",
-    }
-    source = alias_map.get(source, source)
-    print(f"🔍 Running search for: {query}")
+    for task in tasks:
+        source = task.get("source", "").lower()
+        target = task.get("target", "")
+        task_type = task.get("task_type", "")
 
-    try:
-        if source == "linkedin_professional_networks":
-            results = lookup_linkedin_profile(task["target"])
-            confidence = "high"
-        elif source == "twitter":
-            results = search_twitter_mentions(task["target"])
-            confidence = "medium"
-        elif source == "opencorporates":
-            results = lookup_opencorporates(task["target"])
-            confidence = "medium"
-        elif source == "academic_databases":
-            results = search_publications(task["target"])
-            confidence = "medium"
-        elif source == "gov_watchlist":
-            results = mock_government_database_lookup(task["target"])
-            confidence = "high"
-        elif source == "public_records":
-            results = mock_public_records_lookup(task["target"])
-            confidence = "medium"
-        elif source == "bankruptcy_records":
-            results = mock_financial_record_lookup(task["target"])
-            confidence = "medium"
-        else:
-            results = search_duckduckgo(query)
-            confidence = "medium"
+        query = f"{target} {task_type.replace('_', ' ')}"
+        print(f"📡 Searching [{source}] for: {query}")
 
-        return {
-            "task": task,
-            "results": results,
-            "confidence": confidence,
-            "source": source,
-            "timestamp": time.time()
-        }
+        try:
+            if source == "linkedin":
+                data = lookup_linkedin_profile(target)
+                confidence = 0.9
+            elif source == "twitter" or source == "twitter/x":
+                data = search_twitter_mentions(target)
+                confidence = 0.7
+            elif source == "opencorporates" or source == "corporate registries":
+                data = lookup_opencorporates(target)
+                confidence = 0.75
+            elif source == "google scholar" or source == "academic databases":
+                data = search_publications(target)
+                confidence = 0.7
+            elif source in {"google", "reuters", "bloomberg", "associated press", "google news"}:
+                data = search_duckduckgo(query)
+                confidence = 0.6
+            else:
+                data = mock_result(task, "No direct integration, mocked response used.")
+                confidence = 0.5
 
-    except Exception as e:
-        print("❌ Retrieval failed:", e)
-        return {
-            "task": task,
-            "results": [],
-            "error": str(e),
-            "confidence": "low",
-            "source": source,
-            "timestamp": time.time()
-        }
+            data = ensure_dict_list(data, fallback_msg="Wrapped non-dict item")
 
-# 🧪 Optional: test
+            for item in data:
+                item.update({
+                    "task": task,
+                    "confidence": confidence,
+                    "timestamp": time.time()
+                })
+            results.extend(data)
+
+        except Exception as e:
+            print(f"❌ Retrieval error for task {task}: {e}")
+            results.append({
+                "task": task,
+                "error": str(e),
+                "confidence": 0.0,
+                "source": source,
+                "timestamp": time.time()
+            })
+
+    print(f"📥 Collected {len(results)} retrieval results.")
+    state["retrieval_results"] = results
+    return state
+
+# ✅ Optional test runner
 if __name__ == "__main__":
-    test_tasks = [
-        {"task_type": "professional_profile_search", "target": "Ali Khaledi Nasab", "source": "linkedin_professional_networks"},
-        {"task_type": "news_search", "target": "Ali Khaledi Nasab", "source": "news_media"},
-        {"task_type": "academic_publications", "target": "Ali Khaledi Nasab", "source": "academic_databases"},
-        {"task_type": "business_registration_check", "target": "Ali Khaledi Nasab", "source": "company_registries"},
-        {"task_type": "regulatory_check", "target": "Ali Khaledi Nasab", "source": "government_databases"},
-        {"task_type": "court_records_search", "target": "Ali Khaledi Nasab", "source": "public_records"},
-        {"task_type": "sanctions_screening", "target": "Ali Khaledi Nasab", "source": "sanctions_screening_databases"},
-        {"task_type": "financial_records_search", "target": "Ali Khaledi Nasab", "source": "financial_distress_check"},
-        {"task_type": "social_media_lookup", "target": "Ali Khaledi Nasab", "source": "twitter"},
-    ]
-
-    all_results = []
-    for task in test_tasks:
-        result = retrieval_agent(task)
-        all_results.append(result)
-        print(f"\n📡 Source: {task['source']}\n", result)
-    
-    assert len(all_results) >= 8, "❗ Must perform at least 8 distinct retrievals"
+    state = {
+        "osint_tasks": [
+            {"task_type": "professional_profile_search", "target": "Ali Khaledi Nasab", "source": "LinkedIn"},
+            {"task_type": "news_search", "target": "Ali Khaledi Nasab", "source": "Reuters"},
+            {"task_type": "academic_search", "target": "Ali Khaledi Nasab", "source": "Google Scholar"},
+            {"task_type": "company_registry_search", "target": "Ali Khaledi Nasab", "source": "OpenCorporates"},
+            {"task_type": "social_media_lookup", "target": "Ali Khaledi Nasab", "source": "Twitter"},
+            {"task_type": "financial_check", "target": "Ali Khaledi Nasab", "source": "SEC EDGAR"},
+        ]
+    }
+    state = retrieval_agent(state)
+    print("🧠 Sample Output:\n", state["retrieval_results"])
