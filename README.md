@@ -22,13 +22,13 @@ cd AI-Agent-
 osint-ai-agent/
 │
 ├── agents/
-│   └── # place your agent files like planning_agent.py, retrieval_agent.py, etc.
+│   └── planning_agent.py, retrieval_agent.py, etc.
 │
 ├── retrieval_sources/
-│   └── # place source scrapers like linkedin.py, twitter.py, opencorporates.py, etc.
+│   └── linkedin.py, twitter.py, opencorporates.py, etc.
 │
 ├── prompts/
-│   └── # optional: store prompt templates if you split them out
+│   └── prompt templates
 │
 ├── .gitignore
 ├── README.md
